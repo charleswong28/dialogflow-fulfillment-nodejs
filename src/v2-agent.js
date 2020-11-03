@@ -240,6 +240,7 @@ class V2Agent {
   sendResponses_(requestSource) {
     let responseJson = this.responseJson_;
 
+    console.log('sendResponses_', JSON.stringify(responseJson));
     if (this.agent.followupEvent_) {
       responseJson = responseJson || {};
       responseJson.followupEventInput = this.agent.followupEvent_;

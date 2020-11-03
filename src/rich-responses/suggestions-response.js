@@ -194,7 +194,7 @@ class Suggestion extends RichResponse {
       }
     }
 
-    console.log('getV2ResponseObject_, response', response);
+    console.log('getV2ResponseObject_, response', JSON.stringify(response));
     return response;
   }
 }
