@@ -170,6 +170,7 @@ class Suggestion extends RichResponse {
    * @private
    */
   getV2ResponseObject_(platform) {
+    console.log('getV2ResponseObject_', platform);
     // Check if response is platform specific
     if (this.platform && this.platform !== platform) {
       // If it is and is not for the specific platform return null
@@ -192,6 +193,8 @@ class Suggestion extends RichResponse {
         response.platform = platform;
       }
     }
+
+    console.log('getV2ResponseObject_, response', response);
     return response;
   }
 }
